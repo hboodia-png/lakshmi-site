@@ -117,6 +117,18 @@ nav.main .btn{padding:10px 18px;font-size:12.5px;font-weight:600;border-bottom:1
 .tick-row span:nth-child(n+9){display:none}
 .tick + .sec{border-top:0}
 
+/* ---------- home page list ---------- */
+.pagelist{list-style:none;border-top:1px solid var(--line)}
+.pagelist li{border-bottom:1px solid var(--line)}
+.pagelist a{display:block;padding:28px 0;text-decoration:none;color:var(--ink)}
+.pagelist a:hover .pl-h{color:var(--pine)}
+.pagelist .pl-h{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(26px,3vw,36px);
+  line-height:1.15;letter-spacing:-.01em;margin-top:10px}
+
+/* ---------- sub pages ---------- */
+.page main{padding-top:var(--headh)}
+.page main>.sec:first-child{border-top:0}
+
 /* ---------- factory ---------- */
 .about-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:64px;align-items:start}
 .about-copy p{margin-bottom:20px;font-size:17.5px;max-width:62ch}
