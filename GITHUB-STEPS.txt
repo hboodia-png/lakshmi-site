@@ -1,0 +1,42 @@
+PUT THE SITE ONLINE WITH GITHUB — FREE, ~5 MINUTES
+(Do this on a computer, not a phone — the upload needs drag-and-drop.)
+
+STEP 1 — MAKE A FREE ACCOUNT
+1. Go to  github.com  and click Sign up.
+2. Use the factory email. Verify the code they send.
+
+STEP 2 — MAKE A "REPOSITORY" (a folder on GitHub)
+1. Click the  +  at the top right  ->  New repository
+2. Repository name:  mahalakshmi-site
+3. Leave everything else as it is (Public). Click  Create repository.
+
+STEP 3 — UPLOAD THE WEBSITE
+1. On the page that appears, click the small link  "uploading an existing file".
+2. Unzip  mahalakshmi-github.zip  on your computer and OPEN the unzipped folder.
+3. Select EVERYTHING inside it (all files AND the images folder) and drag it
+   into the GitHub upload box. Wait until every file shows a green tick.
+4. Click the green  Commit changes  button at the bottom.
+
+STEP 4 — SWITCH THE WEBSITE ON
+1. In the repository, click the  Settings  tab (top right).
+2. In the left menu click  Pages.
+3. Under "Branch" choose  main  and  / (root)  ->  click  Save.
+4. Wait about a minute, refresh the page. A box at the top shows your link:
+
+   https://YOUR-USERNAME.github.io/mahalakshmi-site/
+
+That link works anywhere — WhatsApp it, email it, put it on a business card.
+
+STEP 5 — SWITCH ON THE ENQUIRY FORM (once)
+Send a test enquiry from the live site yourself. An email from FormSubmit
+arrives at heman.boodia@mahalakshmi.co.ke — open it and click ACTIVATE.
+Every enquiry after that lands in the inbox automatically.
+
+LATER — USING mahalakshmi.co.ke INSTEAD
+When you're ready: Settings -> Pages -> Custom domain -> type mahalakshmi.co.ke
+and press Save, then tell me and I'll give you the exact records to change
+at the place the domain was bought.
+
+UPDATING THE SITE
+Send me the changes, I update the files, you drag the new files into the
+repository the same way (GitHub replaces the old ones).
