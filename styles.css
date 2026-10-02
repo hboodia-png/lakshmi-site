@@ -336,6 +336,8 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
   .statement{padding:80px 0}
   .hero-copy{padding:26px 24px 28px;margin-bottom:40px}
   .cap-grid{grid-template-columns:1fr;gap:40px}
+  /* labels, eyebrows and captions never drop below 12px on small screens */
+  .brand span,.foot-brand span{font-size:12px}
 }
 @media (max-width:568px){
   .pgrid{grid-template-columns:repeat(2,1fr);gap:24px 14px}
