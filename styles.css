@@ -370,3 +370,10 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
 .hero .dl:hover{text-decoration-color:#fff}
 .foot-brand .dl{color:#fff;font-size:14px;margin-top:12px}
 .foot-brand .dl:hover{text-decoration-color:#fff}
+
+/* ---------- legal page and quote note ---------- */
+.legal{max-width:62ch}
+.legal h3{font-size:19px;margin-bottom:10px}
+.legal p{font-size:17px;margin-bottom:36px}
+.legal p:last-child{margin-bottom:0}
+.quote-note{font-size:13.5px;color:var(--muted);margin-top:18px;line-height:1.6}
