@@ -45,7 +45,7 @@ section{scroll-margin-top:calc(var(--headh) + 8px)}
 }
 .sec-head p{color:var(--muted);font-size:17.5px}
 .btn{
-  display:inline-block;font-weight:800;font-size:13px;letter-spacing:.09em;text-transform:uppercase;
+  display:inline-block;font:inherit;font-weight:800;font-size:13px;letter-spacing:.09em;text-transform:uppercase;
   padding:17px 30px;text-decoration:none;border:2px solid var(--pine);
   transition:transform .15s ease,background .15s ease,color .15s ease,border-color .15s ease;
   cursor:pointer;text-align:center;
@@ -297,7 +297,7 @@ figure{margin:0}
 .field label{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;
   letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
 .field input,.field select,.field textarea{
-  width:100%;padding:13px 14px;font-family:'Archivo',sans-serif;font-size:15px;color:var(--ink);
+  width:100%;padding:13px 14px;font-family:'Archivo',sans-serif;font-size:16px;color:var(--ink);
   background:var(--greige);border:1px solid var(--line);border-radius:0;-webkit-appearance:none;appearance:none}
 .field select{background-image:linear-gradient(45deg,transparent 50%,var(--pine) 50%),
   linear-gradient(135deg,var(--pine) 50%,transparent 50%);
@@ -331,9 +331,9 @@ footer{background:var(--ink);color:#98a49b;padding:50px 0 42px}
 
 /* ---------- lightbox ---------- */
 .lb{position:fixed;inset:0;z-index:100;background:rgba(13,40,29,.95);display:none;
-  align-items:center;justify-content:center;flex-direction:column;padding:30px;cursor:zoom-out}
+  align-items:center;justify-content:center;flex-direction:column;padding:30px;cursor:zoom-out;touch-action:pinch-zoom}
 .lb.open{display:flex}
-.lb img{max-width:min(1020px,94vw);max-height:82vh;width:auto;height:auto;
+.lb img{max-width:min(1020px,94vw);max-height:82vh;max-height:calc(100svh - 120px);width:auto;height:auto;
   border:1px solid rgba(255,255,255,.25)}
 .lb p{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--thread);margin-top:16px;text-align:center;max-width:80ch}
@@ -343,14 +343,6 @@ footer{background:var(--ink);color:#98a49b;padding:50px 0 42px}
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .rv{opacity:1;transform:none;transition:none}
-  .tick-row{animation:none;flex-wrap:wrap;width:auto}
-  .hero-bg{animation:none}
-  .rleg .thread-line{animation:none}
-  .zoom:hover img,.pcard:hover .pimg,.cert:hover,.btn:hover{transform:none}
-}
 
 /* ---------- responsive ---------- */
 @media (max-width:1024px){
@@ -360,17 +352,20 @@ footer{background:var(--ink);color:#98a49b;padding:50px 0 42px}
   .hero-stats{grid-template-columns:repeat(2,1fr)}
   .hstat{padding-left:0;border-left:0;padding-right:18px}
 }
-@media (max-width:880px){
+@media (max-width:1219px){
   nav.main{display:none}
   .burger{display:block}
   .mnav{position:fixed;top:var(--headh);left:0;right:0;z-index:55;background:var(--greige);
-    border-bottom:2px solid var(--pine);display:none;flex-direction:column;padding:10px 26px 22px}
+    border-bottom:2px solid var(--pine);display:none;flex-direction:column;padding:10px 26px 22px;
+    max-height:calc(100vh - var(--headh));max-height:calc(100svh - var(--headh));overflow-y:auto}
   header.scrolled ~ .mnav{top:58px}
   .mnav.open{display:flex}
   .mnav a{padding:14px 0;font-size:16px;font-weight:600;color:var(--ink);text-decoration:none;
     border-bottom:1px dashed var(--line)}
   .mnav a:last-child{border-bottom:0;color:var(--pine);font-weight:800}
-  .about-grid,.duo,.qgrid,.cgrid{grid-template-columns:1fr;gap:40px}
+}
+@media (max-width:880px){
+  .about-grid,.duo,.qgrid,.cgrid{grid-template-columns:minmax(0,1fr);gap:40px}
   .stats{grid-template-columns:repeat(2,1fr)}
   .resp-cols{grid-template-columns:1fr}
   .route{flex-direction:column}
@@ -395,5 +390,18 @@ footer{background:var(--ink);color:#98a49b;padding:50px 0 42px}
   .gallery3{grid-template-columns:1fr}
   .hero-in{padding-top:118px}
   .hero-stats{grid-template-columns:1fr 1fr}
+  .hstat b{font-size:clamp(19px,5.4vw,22px)}
+  .stats{grid-template-columns:1fr}
+  .stat{padding:22px 22px 20px}
   .clist li{grid-template-columns:1fr;gap:4px}
+}
+
+/* last in the cascade so it also wins inside the responsive blocks */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .tick-row{animation:none;flex-wrap:wrap;width:auto}
+  .hero-bg{animation:none}
+  .rleg .thread-line{animation:none}
+  .zoom:hover img,.pcard:hover .pimg,.cert:hover,.btn:hover{transform:none}
 }

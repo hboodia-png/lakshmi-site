@@ -110,7 +110,7 @@
           io.unobserve(en.target);
         }
       });
-    }, {threshold:.12});
+    }, {threshold:0, rootMargin:'0px 0px -64px 0px'});
     document.querySelectorAll('.rv, .hero-stats').forEach(function(el){ io.observe(el); });
   } else {
     document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
