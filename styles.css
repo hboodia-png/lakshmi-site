@@ -355,3 +355,11 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
 }
+
+/* ---------- profile download link ---------- */
+.dl{display:inline-block;margin-top:16px;font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);
+  text-underline-offset:5px;text-decoration-thickness:1px}
+.hero .dl{color:#fff;margin-top:22px}
+.hero .dl:hover{text-decoration-color:#fff}
+.foot-brand .dl{color:#fff;font-size:14px;margin-top:12px}
+.foot-brand .dl:hover{text-decoration-color:#fff}
