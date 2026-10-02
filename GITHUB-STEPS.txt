@@ -7,7 +7,7 @@ STEP 1 — MAKE A FREE ACCOUNT
 
 STEP 2 — MAKE A "REPOSITORY" (a folder on GitHub)
 1. Click the  +  at the top right  ->  New repository
-2. Repository name:  mahalakshmi-site
+2. Repository name:  lakshmi-site
 3. Leave everything else as it is (Public). Click  Create repository.
 
 STEP 3 — UPLOAD THE WEBSITE
@@ -23,7 +23,7 @@ STEP 4 — SWITCH THE WEBSITE ON
 3. Under "Branch" choose  main  and  / (root)  ->  click  Save.
 4. Wait about a minute, refresh the page. A box at the top shows your link:
 
-   https://YOUR-USERNAME.github.io/mahalakshmi-site/
+   https://YOUR-USERNAME.github.io/lakshmi-site/
 
 That link works anywhere — WhatsApp it, email it, put it on a business card.
 
