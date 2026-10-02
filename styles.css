@@ -108,22 +108,22 @@ nav.main .btn{padding:10px 18px;font-size:12.5px;font-weight:600;border-bottom:1
   line-height:1;color:var(--pine-deep);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .hstat span{display:block;margin-top:10px}
 
-/* ticker row, static */
-.tick{background:var(--paper);border-bottom:1px solid var(--line)}
-.tick-row{display:flex;flex-wrap:wrap;width:auto;max-width:var(--maxw);margin:0 auto;padding:16px 26px;gap:8px 0}
-.tick-row span{white-space:nowrap;padding-right:22px;margin-right:22px;border-right:1px solid var(--line);
-  font-weight:500;letter-spacing:.1em}
-.tick-row span:nth-child(8){border-right:0}
-.tick-row span:nth-child(n+9){display:none}
-.tick + .sec{border-top:0}
-
-/* ---------- home page list ---------- */
-.pagelist{list-style:none;border-top:1px solid var(--line)}
-.pagelist li{border-bottom:1px solid var(--line)}
-.pagelist a{display:block;padding:28px 0;text-decoration:none;color:var(--ink)}
-.pagelist a:hover .pl-h{color:var(--pine)}
-.pagelist .pl-h{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(26px,3vw,36px);
-  line-height:1.15;letter-spacing:-.01em;margin-top:10px}
+/* ---------- home page previews ---------- */
+.hero + .sec{border-top:0}
+.more{display:inline-block;margin-top:32px;font-weight:600;color:var(--pine);
+  text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px;text-decoration-thickness:1px}
+.more:hover{text-decoration-color:var(--pine)}
+.more-tight{margin-top:0;margin-bottom:48px}
+.prev-copy{max-width:62ch;margin-bottom:48px}
+.stat-line{border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:24px 0;margin-bottom:22px}
+.prow{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cats{color:var(--muted);font-size:16px;margin-top:28px}
+.certrow{display:grid;grid-template-columns:repeat(7,1fr);gap:20px}
+.certrow h3{font-size:16.5px;margin-top:6px}
+.steprow{list-style:none;display:flex;flex-wrap:wrap;gap:10px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0}
+.steprow li{font-weight:600;font-size:16px;padding-right:22px;margin-right:22px;border-right:1px solid var(--line)}
+.steprow li:last-child{border-right:0;margin-right:0;padding-right:0}
 
 /* ---------- sub pages ---------- */
 .page main{padding-top:var(--headh)}
@@ -172,8 +172,8 @@ nav.main .btn{padding:10px 18px;font-size:12.5px;font-weight:600;border-bottom:1
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px}
 .duo h3{font-size:24px;margin:14px 0 14px}
 .duo>div>p{color:var(--muted);font-size:17px;margin-bottom:10px;max-width:62ch}
-.duo ul{list-style:none;margin-top:10px;border-top:1px solid var(--line)}
-.duo li{padding:11px 0;font-size:16px;border-bottom:1px solid var(--line)}
+.duo ul,.plainlist{list-style:none;margin-top:10px;border-top:1px solid var(--line)}
+.duo li,.plainlist li{padding:11px 0;font-size:16px;border-bottom:1px solid var(--line)}
 .duo-imgs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .gallery3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 figure{margin:0}
@@ -286,6 +286,8 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
   .pgrid{grid-template-columns:repeat(3,1fr)}
   .certs{grid-template-columns:repeat(2,1fr)}
   .certlist{grid-template-columns:repeat(3,1fr)}
+  .prow{grid-template-columns:repeat(3,1fr)}
+  .certrow{grid-template-columns:repeat(4,1fr)}
   .route-facts{grid-template-columns:1fr;gap:20px}
   .stats{grid-template-columns:repeat(3,1fr)}
   .stat:nth-child(4){border-left:0;padding-left:0}
@@ -328,7 +330,9 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
   .duo-imgs{grid-template-columns:1fr}
   .gallery3{grid-template-columns:1fr}
   .hero-in{padding-top:calc(var(--headh) + 40px)}
-  .tick-row span{border-right:0;padding-right:0;margin-right:24px}
+  .prow{grid-template-columns:1fr 1fr;gap:20px 14px}
+  .certrow{grid-template-columns:1fr 1fr}
+  .steprow li{border-right:0;padding-right:0;margin-right:24px}
   .hero-stats{grid-template-columns:1fr 1fr}
   .hstat{padding:20px 16px 18px}
   .hstat b{font-size:clamp(26px,7vw,32px)}
