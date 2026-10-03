@@ -377,3 +377,10 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
 .legal p{font-size:17px;margin-bottom:36px}
 .legal p:last-child{margin-bottom:0}
 .quote-note{font-size:13.5px;color:var(--muted);margin-top:18px;line-height:1.6}
+
+/* wide screens: soften the hero photo so compression does not show */
+@media (min-width:1601px){
+  .hero{overflow:hidden}
+  .hero-bg{filter:blur(2px);transform:scale(1.02)}
+  .hero-scrim{display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(13,40,29,.28)}
+}
