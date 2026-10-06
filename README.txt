@@ -20,9 +20,9 @@ STEP 2 — CONNECT THE REAL DOMAIN (mahalakshmi.co.ke)
 3. Wait a few hours. Netlify adds the padlock (HTTPS) automatically.
 
 STEP 3 — SWITCH ON THE ENQUIRY FORM (one time, 1 minute)
-The quote form sends enquiries to heman.boodia@mahalakshmi.co.ke through a free
+The quote form sends enquiries to hemantboodia@yahoo.co.uk through a free
 service called FormSubmit. The FIRST time anyone presses "Send enquiry" on the live
-site, FormSubmit emails heman.boodia@mahalakshmi.co.ke a confirmation.
+site, FormSubmit emails hemantboodia@yahoo.co.uk a confirmation.
 OPEN THAT EMAIL AND CLICK "ACTIVATE". After that, every enquiry arrives as a
 normal email. Tip: submit a test enquiry yourself right after the site goes live,
 then activate from the inbox.
