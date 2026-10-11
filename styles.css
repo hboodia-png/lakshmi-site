@@ -191,7 +191,7 @@ figure{margin:0}
 .zoom{cursor:zoom-in;overflow:hidden;background:var(--paper)}
 /* gallery photos share one 4:3 frame, centre-cropped */
 .gallery3 .zoom,.duo-imgs .zoom,.qphotos .zoom{aspect-ratio:4/3}
-.gallery3 .zoom img,.duo-imgs .zoom img,.qphotos .zoom img{width:100%;height:100%;object-fit:cover;object-position:center}
+.gallery3 .zoom img,.duo-imgs .zoom img,.qphotos .zoom img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 
 /* ---------- products ---------- */
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
