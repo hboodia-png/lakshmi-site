@@ -201,7 +201,7 @@ figure{margin:0}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px 24px}
 .pcard{display:flex;flex-direction:column}
 .pcard.hide{display:none}
-.pimg{aspect-ratio:800/920;overflow:hidden;cursor:zoom-in;background:var(--off)}
+.pimg{aspect-ratio:4/5;overflow:hidden;cursor:zoom-in;background:var(--off)}
 .pimg img{width:100%;height:100%;object-fit:cover}
 .pcard h3{font-size:16px;margin-top:14px}
 .pcard small{margin-top:4px}
