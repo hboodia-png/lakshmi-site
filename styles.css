@@ -384,3 +384,11 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
   .hero-bg{filter:blur(2px);transform:scale(1.02)}
   .hero-scrim{display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(13,40,29,.28)}
 }
+
+/* ---------- deck photos: portrait, map, notes ---------- */
+.portrait{max-width:200px;margin:0 0 32px}
+.portrait img{width:100%;height:auto;display:block}
+.portrait .cap{color:rgba(255,255,255,.7)}
+.map{margin:36px 0 0;max-width:760px}
+.resp-note{max-width:62ch;font-size:17px;margin:-24px 0 44px}
+.lab-gallery{margin-top:16px}
