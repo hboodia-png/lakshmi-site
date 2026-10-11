@@ -237,7 +237,8 @@ figure{margin:0}
 /* ---------- certificates ---------- */
 .certlist{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .certlist li{border-top:1px solid var(--line);padding-top:16px}
-.certlist img{width:100%;height:auto;border:1px solid var(--line);background:var(--paper);margin-bottom:14px}
+.certlist img{display:block;height:64px;width:auto;max-width:170px;object-fit:contain;margin-bottom:14px;
+  pointer-events:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
 .certlist h3{font-size:17px;margin-bottom:3px}
 
 /* ---------- responsibility ---------- */
