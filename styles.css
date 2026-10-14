@@ -387,10 +387,7 @@ footer{background:var(--pine-deep);color:#aab6ad;padding:52px 0 44px;border-top:
   .hero-grid{grid-template-columns:1fr;gap:36px;margin-bottom:56px}
 }
 
-/* ---------- deck photos: portrait, map, notes ---------- */
-.portrait{max-width:200px;margin:0 0 32px}
-.portrait img{width:100%;height:auto;display:block}
-.portrait .cap{color:rgba(255,255,255,.7)}
+/* ---------- deck photos: notes ---------- */
 .resp-note{max-width:62ch;font-size:17px;margin:-24px 0 44px}
 .lab-gallery{margin-top:16px}
 
