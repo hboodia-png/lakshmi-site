@@ -44,7 +44,7 @@
 
   // product filter
   var fbtns = document.querySelectorAll('.fbtn');
-  var cards = document.querySelectorAll('.pcard');
+  var cards = document.querySelectorAll('.pcard, .pcat');
   fbtns.forEach(function(b){
     b.addEventListener('click', function(){
       fbtns.forEach(function(x){ x.classList.remove('on'); });
